@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { AppUser } from './models/app-user';
+import { AppUser } from 'shared/models/app-user';
 import { AngularFireDatabase, FirebaseObjectObservable } from 'angularfire2/database';
 import * as firebase from 'firebase';
 @Injectable({

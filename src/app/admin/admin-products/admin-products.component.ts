@@ -1,9 +1,8 @@
-import { FirebaseObjectObservable, FirebaseListObservable } from 'angularfire2/database';
-import { ProductService } from './../../product.service';
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Observable, Subscription } from 'rxjs';
-import { Product } from 'src/app/models/product';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { DataTableResource } from 'angular5-data-table';
+import { Subscription } from 'rxjs';
+import { ProductService } from 'shared/services/product.service';
+import { Product } from 'shared/models/product';
 
 @Component({
   selector: 'app-admin-products',

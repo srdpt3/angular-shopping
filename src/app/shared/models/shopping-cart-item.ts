@@ -1,4 +1,4 @@
-import { Product } from 'src/app/models/product';
+
 export class ShoppingCartItem {
     $key: string;
     title: string;

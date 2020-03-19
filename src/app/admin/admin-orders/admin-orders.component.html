@@ -1,14 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <p>
-      admin order
-    </p>
-  </body>
-</html>
+<h1>Orders</h1>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Customer</th>
+      <th>Date</th>
+      <th></th>
+    </tr>
+  </thead> 
+  <tbody>
+    <tr *ngFor="let order of orders$ | async">
+      <td>{{ order.shipping.name }}</td>
+      <td>{{ order.datePlaced | date}}</td>
+      <td>
+        <a href="#">View</a>
+      </td>
+    </tr>
+  </tbody> 
+</table>
+
+
